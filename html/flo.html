@@ -4,20 +4,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Flo">
+    <meta name="author" content="Florian Hoehle, mail@FlorianHoehle.de">
     <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="flo.css">
-    <title>Flo</title>
+    <link rel="stylesheet" href="/css/flo.css">
+    <title>Flo's Game</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
-<body>
-<header>
-    <h1>Flo</h1>
-</header>
-<main>
-    
-</main>
-<footer>
-    
-</footer>
+<body onload="view.dungeon(0)"></body>
+    <div class="grid-container">
+        <h1>The Game</h1>
+        <div class="hud">
+<!-- location label -->
+            <div class="location-label">
+                <p>You're in </p>
+                <p>You're looking at </p>
+            </div>
+<!-- location value -->
+            <div class="location-value">
+                <p id="location"></p>
+                <p id="view"></p>
+            </div>
+<!-- info msg-->
+            <p id="info"></p>
+<!-- interaction label -->
+            <div class="interaction-label">
+                <p id="handLabel"></p>
+                <p id="bagLabel"></p>
+            </div>
+<!-- interaction value -->
+            <div class="interaction-value">
+                <p id="hand"></p>
+                <p id="bag"></p>
+            </div>
+        </div>
+<!-- menu / help -->
+        <p id="help">Press <span class="material-icons">space_bar</span> for Instructions.</p>
+    </div>
+<!-- popup -->
+    <div id="instruction">
+        <h1>INSTRUCTIONS</h1>
+        <p class="instTxt">
+            <span class="material-icons">keyboard_arrow_up</span>
+            interact
+        </p>
+
+        <p class="instTxt">
+            <span class="material-icons">keyboard_arrow_left</span>
+            turn left
+        </p>
+
+        <p class="instTxt">
+            <span class="material-icons">keyboard_arrow_right</span>
+            turn right
+        </p>
+
+        <p class="instTxt">
+            <span class="material-icons">keyboard_arrow_down</span>
+            open bag
+        </p>
+
+
+        <h2>with bag open:</h2>
+        <p class="instTxt">
+            <span class="material-icons">keyboard_arrow_up</span>
+            select / deselect item
+        </p>
+
+        <p class="instTxt">
+            <span class="material-icons">keyboard_arrow_left</span>
+            previous item
+        </p>
+
+        <p class="instTxt">
+            <span class="material-icons">keyboard_arrow_right</span>
+            next item
+        </p>
+
+        <p class="instTxt">
+            <span class="material-icons">keyboard_arrow_down</span>
+            close bag
+        </p>
+
+        <a href="index.html">
+            <p class="menuLink">Main Menu</p>
+        </a>
+    </div>
+<!-- scripts -->
+    <script src="/js/flo.js"></script>
 </body>
 </html>

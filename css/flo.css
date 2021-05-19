@@ -10,10 +10,129 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
+    color: #fff;
 }
 
 body{
     font-size: 1.6rem;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background-color: #282828;
+}
+/* GAME */
+.grid-container{
+    height: 100vh;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    ".    head ."
+    "inst hud  ."
+    ".    .    .";
 }
 
+h1{
+    grid-area: head;
+    font-size: 8rem;
+}
+
+/* hud */
+.hud{
+    grid-area: hud;
+    width: 100%;
+    height: 100%;
+    font-size: 4rem;
+
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr 2fr;
+    grid-template-areas: 
+    "loclab loc "
+    "info   info"
+    "intlab int ";
+}
+.location-label,
+.location-value{
+    align-self: end;
+    font-size: 5rem;
+}
+
+.location-label{
+    grid-area: loclab;
+    text-align: right;
+}
+
+.location-value{
+    grid-area: loc;
+}
+
+.interaction-label{
+    grid-area: intlab;
+    text-align: right;
+}
+
+.interaction-value{
+    grid-area: int;
+}
+
+#location{
+    color: darkmagenta;
+}
+
+#hand{
+    color: #f80;
+}
+#view, #bag{
+    color: lightskyblue;
+}
+
+#info{
+    grid-area: info;
+    color: #0f0;
+    text-align: center;
+    align-self: center;
+}
+
+#help{
+    grid-area: inst;
+    font-size: 3rem;
+    color: #f04;
+}
+/* isntructions */
+#instruction{
+    position: fixed;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100vh;
+    background-color: #282828;
+    text-align: center;
+    font-size: 200%;
+    display: none;
+}
+
+/* INDEX */
+.menuLink{
+    transition: background-color 1.5s;
+    background-color: darkred;
+    font-size: 50px;
+    text-align: center;
+    width: 350px;
+    margin: 50px auto; 
+    border: solid 5px black;
+    padding: 10px;
+}
+
+.menuLink:hover{
+    background-color: green;
+}
+#instructions{
+    text-align: center;
+    font-size: 200%;
+}
+.material-icons.md-60{
+    font-size: 100px;
+}
