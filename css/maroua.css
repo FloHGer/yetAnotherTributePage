@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(./image/istockphoto-1079132980-612x612.jpg);
+    background-image: url("/images/istockphoto-1079132980-612x612.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   background-position: center;
