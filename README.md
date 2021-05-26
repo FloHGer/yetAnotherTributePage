@@ -4,6 +4,7 @@
 
 WhatToDo:
 - fork this `repo` to your `github-account`
+- clone it from there (don't clone it from my account)
 - add an portrait image (`"yourName.jpg"`) to the `images/portraits` folder
     (this will show up on the index page)
 - edit your files (`"yourName.html"` and `"yourName.css"`) or...
