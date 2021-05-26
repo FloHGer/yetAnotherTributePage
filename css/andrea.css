@@ -1,18 +1,83 @@
 /* GENERAL */
-:root{
-    font-size: 62.5%;
-    scroll-behavior: smooth;
+:root {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style-type: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
 }
 
-body{
-    font-size: 1.6rem;
+body {
+  font-size: 1.6rem;
 }
 
+html {
+  font-size: 10px;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  background: linear-gradient(146deg, #6affb4 26%, rgb(253, 45, 142) 100%);
+}
+h1 {
+  font-size: 60px;
+  text-align: center;
+}
+p {
+  font-size: 20px;
+  text-shadow: 1px 1px 0px white;
+  color: #ff4929;
+  line-height: 2.7rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 3vh 10vw 3vh 10vw;
+  text-align: justify;
+  font-family: "Pattaya", sans-serif;
+}
+body {
+  border-radius: 10px;
+  margin: 4vh auto;
+  width: 980px;
+  background-color: rgb(244, 255, 144);
+  padding: 0 20px 20px 20px;
+  border: 3px solid black;
+}
+h1 {
+  margin: 0;
+  padding: 20px 0;
+  color: rgb(74, 255, 195);
+  text-shadow: 3px 3px 1px black;
+  animation-name: spacing;
+  animation-duration: 8s;
+  letter-spacing: 5px;
+}
+
+@keyframes spacing {
+  from {
+    letter-spacing: 50px;
+  }
+  to {
+    letter-spacing: 5px;
+  }
+}
+
+img {
+  display: block;
+  max-width: 20rem;
+  margin: 5vh auto;
+  animation-name: rotate;
+  animation-duration: 10s;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(600deg);
+  }
+  to {
+    transform: ;
+  }
+}
