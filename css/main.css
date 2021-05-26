@@ -93,6 +93,11 @@ img{
     object-fit: cover;
 }
 
+#img9{
+    object-position: 50% 20%;
+}
+
+
 /* STUDENTS */
 .thankfulStudent{
     position: relative;
