@@ -1,18 +1,97 @@
-/* GENERAL */
-:root{
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-}
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
-    list-style-type: none;
+}
+
+:root{
+    font-size: 62.5%;
+   
 }
 
 body{
+   
+    height: 100vh;
+    background-color: rgb(78, 67, 40); 
+    background-repeat: no-repeat;
+    background-size: cover;
     font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+.wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 15rem;
+}
+
+
+
+.text-box {
+    color: blanchedalmond;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 1%;
+    height: 40rem;
+    width: 40rem;
+    border-radius: 2rem;
+    font-size: 2rem;
+   
+    background: rgba(139, 184, 98, 0.1);
+    backdrop-filter: blur( 2px );
+    box-shadow: 0 8px 32px 0 rgba(226, 231, 225, 0.37);
+}
+
+p{
+    margin: 2rem;
+    padding: 3rem;
+}
+
+.text-box2 {
+    color: blanchedalmond;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 1%;
+    height: 40rem;
+    width: 40rem;
+    border-radius: 2rem;
+    font-size: 2rem;
+    background: rgba(139, 184, 98, 0.1);
+    backdrop-filter: blur( 2px );
+    box-shadow: 0 8px 32px 0 rgba(228, 235, 226, 0.37);
+}
+
+p{
+    margin: 2rem;
+    padding: 3rem;
+}
+
+.list-item{
+    color: blanchedalmond;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 1rem;
+    height: 40rem;
+    width: 40rem;
+    border-radius: 2rem;
+    background: rgba(139, 184, 98, 0.1);
+    backdrop-filter: blur( 2px );
+    box-shadow: 0 8px 32px 0 rgba(234, 241, 233, 0.37);
+}
+
+li{
+    margin: 3rem;
+    padding: 1rem;
+}
+
+h1{
+    text-align: center;
+    color: blanchedalmond;
+    margin-top: 8rem;
+    font-size: 5rem;
+}
+
+h2{
+    text-align: center;
+    margin-top: 1rem;
+}
