@@ -1,18 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap");
+
 /* GENERAL */
-:root{
-    font-size: 62.5%;
-    scroll-behavior: smooth;
+:root {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style-type: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
 }
 
-body{
-    font-size: 1.6rem;
+body {
+  font-size: 1.6rem;
+  height: 100%;
+  width: 100vw;
+  padding: 2rem;
+  background-image: url(../images/bg-kany.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Playfair Display", serif;
 }
 
+h1 {
+  color: aliceblue;
+  
+}
+
+.line {
+  position: relative;
+  top: 35%;
+  width: 28rem;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  /* border-right: 2px solid transparent; */
+
+  font-size: 200%;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* ANIMATION */
+
+.type {
+  animation: typewriter 4s steps(256) 1s 1 normal both,
+    cursor 0.5s infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 20ch;
+  }
+}
+
+@keyframes cursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.45);
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+}
+
+div {
+  width: 20px;
+  height: 20px;
+  background-color: #ff69b493;
+  margin: 22% auto;
+  border-radius: 50px;
+  color: rgba(255, 255, 255, 0);
+}
+
+p {
+  text-align: center;
+  padding-top: 3rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+div:hover {
+  background: rgb(226, 231, 254);
+  background: linear-gradient(
+    90deg,
+    rgba(226, 231, 254, 0) 0%,
+    rgba(172, 64, 161, 1) 46%,
+    rgba(226, 231, 254, 0) 100%
+  );
+  border-radius: 0;
+  display: block;
+  width: 400px;
+  height: 100px;
+  color: #091a4a;
+  transition: ease  1s;
+}

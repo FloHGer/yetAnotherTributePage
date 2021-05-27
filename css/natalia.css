@@ -1,18 +1,186 @@
-/* GENERAL */
-:root{
-    font-size: 62.5%;
-    scroll-behavior: smooth;
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style-type: none;
+html {
+	font-size: 62.5%;
 }
 
-body{
-    font-size: 1.6rem;
+body {
+	height: 100vh;
+	background-image: linear-gradient(
+		135deg,
+		#ff0a54ff,
+		#ff477eff,
+		#ff5c8aff,
+		#ff7096ff,
+		#ff85a1ff,
+		#ff99acff,
+		#fbb1bdff,
+		#f9bec7ff,
+		#f7cad0ff,
+		#d4adb3
+	);
+	background-size: 400%;
+	background-position: right;
+	animation: gradient 3s infinite alternate;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
+header {
+	display: flex;
+
+	width: 80%;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+h1 {
+	font-size: 18rem;
+	text-align: center;
+	background-image: linear-gradient(
+		90deg,
+		#757bc8ff,
+		#8187dcff,
+		#8e94f2ff,
+		#9fa0ffff,
+		#ada7ffff,
+		#bbadffff,
+		#cbb2feff,
+		#dab6fcff,
+		#ddbdfcff,
+		#e0c3fcff
+	);
+	background-clip: text;
+	-webkit-background-clip: text;
+	background-size: 300%;
+	background-position: right;
+	color: transparent;
+	letter-spacing: 5rem;
+	animation: gradient 3s infinite alternate, slideInRight 3s ease-in;
+	margin-bottom: 5rem;
+	position: relative;
+}
+
+h1::before {
+	content: "THANK YOU BEN";
+	position: absolute;
+	top: -3rem;
+	left: -3rem;
+	z-index: -1;
+	background-image: linear-gradient(
+		135deg,
+		#729ea1ff,
+		#d7f75bff,
+		#cdc776ff,
+		#d7ffabff,
+		#98ce00ff,
+		#212922ff,
+		#294936ff,
+		#3e6259ff,
+		#5b8266ff,
+		#c5decdff
+	);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	background-size: 300%;
+	background-position: right;
+	animation: gradient 3s 1s infinite alternate, slideInLeft 5s;
+}
+
+h1::after {
+	content: "THANK YOU BEN";
+	position: absolute;
+	top: 3rem;
+	left: 3rem;
+	background-image: linear-gradient(
+		135deg,
+		#729ea1ff,
+		#d7f75bff,
+		#cdc776ff,
+		#d7ffabff,
+		#98ce00ff,
+		#212922ff,
+		#294936ff,
+		#3e6259ff,
+		#5b8266ff,
+		#c5decdff
+	);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	background-size: 300%;
+	background-position: right;
+	animation: gradient 3s infinite alternate, slideInUp 5s;
+}
+
+h3 {
+	font-size: 6rem;
+	animation: slideFull 5s 2s linear both;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: #51ad35;
+}
+
+embed {
+	width: 0;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: right;
+	}
+
+	100% {
+		background-position: left;
+	}
+}
+
+@keyframes slideInRight {
+	0% {
+		transform: translateX(-100rem);
+	}
+
+	100 % {
+		transform: translateX(0);
+	}
+}
+@keyframes slideInLeft {
+	0% {
+		transform: translateX(200rem);
+	}
+
+	100 % {
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideInUp {
+	0% {
+		transform: translateY(-200rem);
+	}
+
+	100 % {
+		transform: translateY(0);
+	}
+}
+
+@keyframes slideFull {
+	0% {
+		opacity: 0;
+		transform: translateX(-100rem);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(50rem);
+	}
+}
