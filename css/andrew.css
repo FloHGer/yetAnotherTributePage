@@ -14,5 +14,38 @@
 
 body{
     font-size: 1.6rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(132, 175, 132);
 }
+img{
+    width: 20%;
+    position: absolute;
+    
+}
+
+h1 {
+    text-align: center;
+    margin: 25px ;
+    color:rgb(66, 24, 45);
+}
+
+p{
+    text-align: center;
+    font-size: 40px;
+    margin: 30rem ;
+    color:rgb(66, 24, 45);
+}
+footer{
+    background-color: rgba(36, 36, 177, 0.103);
+    height: 20vh;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+h2{
+    text-align: center; 
+    letter-spacing: 10px;
+    color:rgb(66, 24, 45);
+}
+
 
