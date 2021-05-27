@@ -1,6 +1,7 @@
 var alcione = 0; andrea = 0; andrew = 0; evgira = 0; fahd = 0; flo = 0;
     kany = 0; lorenzo = 0; maroua = 0; natalia = 0; pavel = 0; piet = 0;
     susan = 0; tobias = 0; ugur = 0; veronica = 0; viviana = 0; zhino = 0;
+    all = 0;
 
 
 function toggleCam(s){
@@ -257,5 +258,53 @@ function toggleCam(s){
                 document.getElementById("cam18").style.color = "#e02828";
             }
             break;
+    }
+}
+
+function toggleAll(){
+    if(all == 0){
+        all = 1;
+        document.getElementById("video-icon").style.color = "#e02828";
+        document.getElementById("video").innerHTML = "Stop Video";
+        toggleCam(1);
+        toggleCam(2);
+        toggleCam(3);
+        toggleCam(4);
+        toggleCam(5);
+        toggleCam(6);
+        toggleCam(7);
+        toggleCam(8);
+        toggleCam(9);
+        toggleCam(10);
+        toggleCam(11);
+        toggleCam(12);
+        toggleCam(13);
+        toggleCam(14);
+        toggleCam(15);
+        toggleCam(16);
+        toggleCam(17);
+        toggleCam(18);
+    }else if(all == 1){
+        all = 0;
+        document.getElementById("video-icon").style.color = "#23d959";
+        document.getElementById("video").innerHTML = "Start Video";
+        toggleCam(1);
+        toggleCam(2);
+        toggleCam(3);
+        toggleCam(4);
+        toggleCam(5);
+        toggleCam(6);
+        toggleCam(7);
+        toggleCam(8);
+        toggleCam(9);
+        toggleCam(10);
+        toggleCam(11);
+        toggleCam(12);
+        toggleCam(13);
+        toggleCam(14);
+        toggleCam(15);
+        toggleCam(16);
+        toggleCam(17);
+        toggleCam(18);
     }
 }
